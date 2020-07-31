@@ -1,0 +1,18 @@
+{
+  "name": "epcar",
+  "version": "1.0.0",
+  "description": "epcar bot on heroku",
+  "main": "richbot.js",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "ffmpeg-static": "^4.2.6",
+    "google-images": "^2.1.0",
+    "ytdl-core": "^3.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Saperstein",
+  "license": "ISC"
+}
