@@ -28,7 +28,7 @@ const client = new Discord.Client();
 
 const GoogleImages = require('google-images');
 
-const clientG = new GoogleImages('016068996190123085229:kcsibvskhoc', 'AIzaSyC87FAGjS64h2tU1W8xh5vuOozjv7S2vYE');
+const clientG = new GoogleImages(process.env.API1, process.env.API2);
 const ytdl = require('ytdl-core');
 function main(){
   var imgurl='';
