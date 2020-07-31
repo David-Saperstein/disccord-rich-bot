@@ -73,4 +73,4 @@ client.on('message', async message => {
 });
 
 // Log our bot in using the token from https://discordapp.com/developers/applications/me
-client.login('NzM4NzY4MzQ0MzAzNTM0MjI4.XyQtog.qJ1Oet0dbfSt8PoRoTeHeNF_l2o');
+client.login(process.env.BOT_TOKEN);
