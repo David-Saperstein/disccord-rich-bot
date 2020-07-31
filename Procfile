@@ -1,1 +1,1 @@
-worker: node richbot.js
+worker: node bot.js
