@@ -6,6 +6,7 @@
 
 // Import the discord.js module
 const yt=['https://www.youtube.com/watch?v=YT_MycK6_tA',
+'https://youtu.be/QDh6RWD-8WI',
 'https://www.youtube.com/watch?v=SCL46jdWX9g',
 'https://www.youtube.com/watch?v=Ph7ilM8Ua_s',
 'https://www.youtube.com/watch?v=hU3OfgLJSC4',
