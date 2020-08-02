@@ -58,6 +58,8 @@ client.on("message", async message => {
   }else if(message.content.startsWith(`${prefix}-leave`)){
     if(message.member.voice.channel){
       message.member.voice.channel.leave();
+    }else{
+      message.reply('You must be in my vc first');
     }
     queue.delete(message.guild.id);
   }else if(message.content.startsWith(`${prefix}-options`)){
