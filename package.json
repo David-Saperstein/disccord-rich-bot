@@ -7,7 +7,7 @@
     "discord.js": "^12.4.1",
     "@discordjs/opus":"^0.3.3",
     "ytdl-core": "^4.0.3",
-    "ffmeg-static": "^4.2.7"
+    "ffmpeg-static": "^4.2.7"
   },
   "engines" : {
     "node": "14.x"
