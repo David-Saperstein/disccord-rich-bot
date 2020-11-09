@@ -2,7 +2,7 @@
   "name": "epcar",
   "version": "1.0.0",
   "description": "a discord music bot with richard epcar features",
-  "main": "newbot.js",
+  "main": "bot.js",
   "dependencies": {
     "discord.js": "^12.4.1",
     "@discordjs/opus":"^0.3.3",
