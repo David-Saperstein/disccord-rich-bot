@@ -1,7 +1,6 @@
 const Discord = require("discord.js");
 const prefix='!rich';
 const ytdl = require("ytdl-core");
-require("ffmpeg");
 
 const client = new Discord.Client();
 const fs=require('fs');
