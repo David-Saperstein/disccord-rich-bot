@@ -1,13 +1,12 @@
 {
   "name": "epcar",
   "version": "1.0.0",
-  "description": "epcarbot in heroku",
-  "main": "richbot.js",
+  "description": "a discord music bot with richard epcar features",
+  "main": "newbot.js",
   "dependencies": {
-    "discord.js": "^12.2.0",
-    "@discordjs/opus": "^0.3.2",
-    "ffmpeg-static": "^4.2.6",
-    "ytdl-core": "^3.2.0"
+    "discord.js": "^12.4.1",
+    "@discordjs/opus":"^0.3.3",
+    "ytdl-core": "^4.0.3"
   },
   "devDependencies": {},
   "scripts": {
