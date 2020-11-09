@@ -41,7 +41,7 @@ client.on("message", async message => {
   const serverQueue = queue.get(message.guild.id);
 
   if (message.content.startsWith(`${prefix}-play`)) {
-    execute(message, serverQueue);
+    prexecute(message, serverQueue);
     return;
   } else if (message.content.startsWith(`${prefix}-skip`)) {
     skip(message, serverQueue);
@@ -68,14 +68,22 @@ client.on("message", async message => {
     message.channel.send("You need to enter a valid command!");
   }
 });
-
-async function execute(message, serverQueue) {
-  const args = message.content.split(" ");
+function prexecute(message, serverQueue){
+  args = message.content.split(" ");
   for (var i=0;i<yt.length;i++){
     if(args[1]==keyword[i]){
       args[1]=yt[i];
     }
   }
+  execute(message, serverQueue,args)
+}
+async function execute(message, serverQueue,args) {
+  // const args = message.content.split(" ");
+  // for (var i=0;i<yt.length;i++){
+  //   if(args[1]==keyword[i]){
+  //     args[1]=yt[i];
+  //   }
+  // }
   const voiceChannel = message.member.voice.channel;
   if (!voiceChannel)
     return message.channel.send(
@@ -153,6 +161,7 @@ function play(guild, song) {
   const dispatcher = serverQueue.connection
     .play(ytdl(song.url))
     .on("finish", () => {
+      console.log("Finished song")
       serverQueue.songs.shift();
       play(guild, serverQueue.songs[0]);
     })
